@@ -1,0 +1,11 @@
+{
+  "UK": { "name": "United Kingdom", "location_code": 2826, "language_code": "en" },
+  "US": { "name": "United States", "location_code": 2840, "language_code": "en" },
+  "CA": { "name": "Canada", "location_code": 2124, "language_code": "en" },
+  "AU": { "name": "Australia", "location_code": 2036, "language_code": "en" },
+  "IE": { "name": "Ireland", "location_code": 2372, "language_code": "en" },
+  "NZ": { "name": "New Zealand", "location_code": 2554, "language_code": "en" },
+  "DE": { "name": "Germany", "location_code": 2276, "language_code": "de" },
+  "FR": { "name": "France", "location_code": 2250, "language_code": "fr" },
+  "ES": { "name": "Spain", "location_code": 2724, "language_code": "es" }
+}

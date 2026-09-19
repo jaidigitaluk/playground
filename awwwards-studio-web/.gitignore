@@ -1,0 +1,19 @@
+# Secret & runtime ignore
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+__pycache__/
+venv/
+.venv/
+.cache/
+*.sqlite
+*.db
+*.log
+node_modules/
+.next/
+out/
+build/
+dist/

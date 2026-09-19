@@ -1,0 +1,11 @@
+{
+  "name": "dataforseo-test",
+  "version": "1.0.0",
+  "description": "DataForSEO resilience testing sandbox with direct API and MCP exploration",
+  "main": "index.js",
+  "scripts": {
+    "mcp": "npx -y dataforseo-mcp-server"
+  },
+  "dependencies": {},
+  "private": true
+}

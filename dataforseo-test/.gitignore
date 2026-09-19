@@ -1,0 +1,26 @@
+# DataForSEO Project Gitignore - Strict Zero Leakage
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+
+# Cache & Local DBs
+.cache/
+*.sqlite
+*.db
+*.log
+
+# Python Virtualenv & bytecode
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Deliverables containing proprietary client data (keep templates, ignore raw client dumps if needed)
+output/debug/
+output/reports/

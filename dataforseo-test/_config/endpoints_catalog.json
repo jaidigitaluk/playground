@@ -1,0 +1,77 @@
+{
+  "serp": {
+    "google_organic_live_advanced": {
+      "path": "/v3/serp/google/organic/live/advanced",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.002,
+      "description": "Real-time Google SERP scraping with full SERP features: AI Overviews, People Also Ask, Featured Snippets, Knowledge Graph, Top Stories, Local Pack.",
+      "critical_fields": ["items", "item_types", "se_results_count", "item.ai_overview", "item.people_also_ask"]
+    },
+    "google_organic_task_post": {
+      "path": "/v3/serp/google/organic/task_post",
+      "method": "POST",
+      "mode": "standard_async",
+      "cost_usd": 0.0006,
+      "description": "Standard asynchronous Google SERP task (70% cheaper than live). Requires webhook or polling."
+    }
+  },
+  "dataforseo_labs": {
+    "keyword_suggestions_live": {
+      "path": "/v3/dataforseo_labs/google/keyword_suggestions/live",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.01,
+      "description": "Returns search volume, CPC, competition, keyword difficulty, and monthly trend data for relevant keyword variations.",
+      "max_limit_default": 20
+    },
+    "search_intent_live": {
+      "path": "/v3/dataforseo_labs/google/search_intent/live",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.002,
+      "description": "Classifies a list of keywords by search intent: informational, navigational, commercial, transactional, with confidence scores."
+    },
+    "ranked_keywords_live": {
+      "path": "/v3/dataforseo_labs/google/ranked_keywords/live",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.01,
+      "description": "Returns keywords that a specific competitor domain ranks for in Google."
+    },
+    "historical_serps_live": {
+      "path": "/v3/dataforseo_labs/google/historical_serps/live",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.01,
+      "description": "Historical rankings and volatility for a keyword over time."
+    }
+  },
+  "backlinks": {
+    "summary_live": {
+      "path": "/v3/backlinks/summary/live",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.02,
+      "description": "Domain rank, referring domains, backlink counts, and toxic link distribution for a target URL or domain."
+    }
+  },
+  "on_page": {
+    "instant_pages": {
+      "path": "/v3/on_page/instant_pages",
+      "method": "POST",
+      "mode": "live",
+      "cost_usd": 0.005,
+      "description": "Instant single-page audit: title, description, h1-h6 tags, word count, schema/microdata, broken links."
+    }
+  },
+  "appendix": {
+    "user_data": {
+      "path": "/v3/appendix/user_data",
+      "method": "GET",
+      "mode": "live",
+      "cost_usd": 0.00,
+      "description": "Returns account balance, limits, and rates. Free call."
+    }
+  }
+}

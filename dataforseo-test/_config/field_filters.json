@@ -1,0 +1,27 @@
+{
+  "strip_keys_globally": [
+    "pixel_coordinates",
+    "rectangle",
+    "xpath",
+    "highlighted",
+    "spell",
+    "cached_url",
+    "version",
+    "extra",
+    "unmatched_query"
+  ],
+  "serp_retained_item_keys": [
+    "type",
+    "rank_group",
+    "rank_absolute",
+    "domain",
+    "title",
+    "description",
+    "url",
+    "breadcrumb",
+    "items",
+    "sources",
+    "text",
+    "asynchronous_ai_overview"
+  ]
+}
