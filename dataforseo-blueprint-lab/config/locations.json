@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "migrated_from": "jaidigitaluk/playground dataforseo-test/_config/locations.json",
+    "note": "DataForSEO location_code values. Add entries as use cases need them; do not bulk-import."
+  },
+  "United Kingdom": 2826,
+  "United States": 2840
+}
