@@ -42,7 +42,8 @@ class DataForSEOProvider:
         entry = self.catalog.get(endpoint)
         if entry is None:
             return None  # unknown endpoint: guard fails closed
-        return float(entry.get("cost_usd", 0.0))
+        cost = entry.get("cost_usd")
+        return None if cost is None else float(cost)
 
     def call(self, endpoint: str, payload: dict) -> dict:
         body = payload if isinstance(payload, list) else [payload]
