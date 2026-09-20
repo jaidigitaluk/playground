@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.cache/
+venv/
+__pycache__/
+*.pyc
+# Raw provider evidence stays local by default (plan question 5 is James's call).
+# The run manifest and append-only ledger are safe to commit.
+runs/*/raw/
