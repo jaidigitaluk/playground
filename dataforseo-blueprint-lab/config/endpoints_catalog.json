@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "migrated_from": "jaidigitaluk/playground dataforseo-test/_config/endpoints_catalog.json",
+    "reviewed": "2026-09-20",
+    "note": "Costs are planning estimates for pre-flight caps, not billing truth. Provider-returned cost wins when present. Verify against current DataForSEO pricing before raising caps."
+  },
+  "dataforseo": {
+    "serp/google/organic/live/advanced": {"cost_usd": 0.002, "mode": "live", "paid": true},
+    "dataforseo_labs/google/keyword_suggestions/live": {"cost_usd": 0.01, "mode": "live", "paid": true},
+    "dataforseo_labs/google/search_intent/live": {"cost_usd": 0.002, "mode": "live", "paid": true},
+    "dataforseo_labs/google/ranked_keywords/live": {"cost_usd": 0.01, "mode": "live", "paid": true},
+    "backlinks/summary/live": {"cost_usd": 0.02, "mode": "live", "paid": true},
+    "on_page/instant_pages": {"cost_usd": 0.005, "mode": "live", "paid": true},
+    "appendix/user_data": {"cost_usd": 0.0, "mode": "live", "paid": false}
+  },
+  "keywords_everywhere": {
+    "get_keyword_data": {"cost_credits": 1, "per": "keyword", "paid": true},
+    "get_pasf_keywords": {"cost_credits": null, "paid": true, "note": "Not metered from this repo; declare cost per call or the run fails closed."},
+    "get_related_keywords": {"cost_credits": null, "paid": true, "note": "Not metered from this repo; declare cost per call or the run fails closed."},
+    "get_url_keywords": {"cost_credits": null, "paid": true, "note": "Not metered from this repo; declare cost per call or the run fails closed."}
+  }
+}
