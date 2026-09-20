@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Spend ledger entry",
+  "type": "object",
+  "required": ["ts", "run_id", "provider", "endpoint", "status", "estimated_cost", "actual_cost", "currency", "cache_hit"],
+  "properties": {
+    "ts": {"type": "string", "format": "date-time"},
+    "run_id": {"type": "string", "minLength": 1},
+    "provider": {"type": "string", "enum": ["dataforseo", "keywords_everywhere"]},
+    "endpoint": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["completed", "blocked_cap", "blocked_unknown_cost", "failed", "cache_hit"]},
+    "estimated_cost": {"type": ["number", "null"], "minimum": 0},
+    "actual_cost": {"type": ["number", "null"], "minimum": 0},
+    "cost_source": {"type": "string", "enum": ["provider_returned", "catalog_estimate", "declared", "none"]},
+    "currency": {"type": "string", "enum": ["USD", "KE_CREDITS"]},
+    "cache_hit": {"type": "boolean"},
+    "detail": {"type": "string"}
+  },
+  "additionalProperties": false
+}

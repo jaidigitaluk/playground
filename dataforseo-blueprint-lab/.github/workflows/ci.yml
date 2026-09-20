@@ -1,0 +1,17 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dev dependencies
+        run: pip install -r dataforseo-blueprint-lab/requirements-dev.txt
+        working-directory: .
+      - name: Run offline tests
+        run: pytest
+        working-directory: dataforseo-blueprint-lab
+        # No network, no credentials: tests run on sanitised fixtures only.

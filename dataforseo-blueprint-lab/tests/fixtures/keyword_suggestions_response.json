@@ -1,0 +1,39 @@
+{
+  "version": "0.1.20260920",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.42 sec.",
+  "cost": 0.01,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "09200000-0000-0000-0000-000000000001",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "result_count": 1,
+      "result": [
+        {
+          "seed_keyword": "example seed",
+          "location_code": 2826,
+          "language_code": "en",
+          "total_count": 2,
+          "items": [
+            {
+              "keyword": "example seed",
+              "keyword_info": {"search_volume": 1000, "cpc": 1.25, "competition": 0.4},
+              "keyword_properties": {"keyword_difficulty": 22},
+              "search_intent_info": {"main_intent": "commercial"}
+            },
+            {
+              "keyword": "example seed services",
+              "keyword_info": {"search_volume": 300, "cpc": 2.10, "competition": 0.5},
+              "keyword_properties": {"keyword_difficulty": 31},
+              "search_intent_info": {"main_intent": "commercial"}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
